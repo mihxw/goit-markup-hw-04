@@ -110,6 +110,7 @@ body {
   display: flex;
   column-gap: 40px;
   gap: 40px;
+  color: #404bbf;
 }
 
 .menu-item {
