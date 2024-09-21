@@ -69,6 +69,9 @@ body {
    Header Styles
 ---------------------------------------------- */
 .page-header {
+  box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -117,6 +120,8 @@ body {
 }
 
 .menu-link {
+  position: relative;
+  color: #404bbf;
   text-decoration: none;
   color: var(--color-logo-span);
   display: block;
@@ -125,6 +130,18 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .menu-link:hover,
@@ -138,6 +155,7 @@ body {
 }
 
 .contact-link {
+  color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -159,6 +177,14 @@ body {
 .main-section {
   padding: 188px 0;
   background-color: #2E2F42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1440;
 }
 
 .head-solution {
@@ -203,6 +229,18 @@ body {
 ---------------------------------------------- */
 .features-section {
   padding: 120px 0;
+}
+
+.item-icons {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .features-list {
@@ -337,6 +375,9 @@ body {
   background-color: var(--color-white);
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 3 * 24px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .for-members {
@@ -362,6 +403,32 @@ body {
   text-align: center;
 }
 
+.guys-list {
+  display: flex;
+  column-gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+
+.guys-list-a {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  background: #4d5ae5;
+  display: block;
+  line-height: 0;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.guys-list-svg {
+  fill: #f4f4fd;
+}
+
 /* ----------------------------------------------
    Footer Styles
 ---------------------------------------------- */
@@ -385,6 +452,7 @@ body {
 }
 
 .footer-description {
+  max-width: 264px;
   font-family: var(--font-roboto);
   font-weight: 400;
   font-size: 16px;
