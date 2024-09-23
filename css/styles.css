@@ -134,19 +134,9 @@ body {
 
 .first-menu-item {
    position: relative;
-   color: #404bbf;
+  color: #404bbf;
 }
 
-.menu-link::after {
-  content: '';
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-}
 
 .menu-link:hover,
 .menu-link:focus {
@@ -496,7 +486,7 @@ body {
 .footer-p {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
