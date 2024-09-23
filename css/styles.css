@@ -133,10 +133,8 @@ body {
 }
 
 .first-menu-item {
-  position: relative;
+   position: relative;
 }
-
-
 
 .menu-link::after {
   content: '';
