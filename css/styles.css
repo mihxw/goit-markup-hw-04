@@ -134,6 +134,7 @@ body {
 
 .first-menu-item {
    position: relative;
+   color: #404bbf;
 }
 
 .menu-link::after {
